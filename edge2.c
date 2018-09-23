@@ -16,9 +16,9 @@ void edge()
         return;
     }
     if (!readImage(fpIn, imgIn)) {
-		printf("ERROR -- could not read the image.\n");
+        printf("ERROR -- could not read the image.\n");
         return;
-	}
+    }
     free(fpIn);
     imgOut->width = imgIn->width;
     imgOut->height = imgIn->height;
@@ -38,9 +38,9 @@ void edge()
         return;
     }
     if (!saveImage(fpOut, imgOut)) {
-		printf("ERROR -- could not write the image.\n");
+        printf("ERROR -- could not write the image.\n");
         return;
-	}
+    }
     free(fpOut);
 }
 
